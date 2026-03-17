@@ -1,23 +1,29 @@
 import logo from './logo.svg';
 import './App.css';
-
+import {useEffect, useState} from "react"
+import Venkatesh from "./Components/Venkatesh"
+import Ajay from "./Components/Ajay"
+import ChildComponent from "./Components/ChildComponent"
 function App() {
+  let [data,setData]=useState([])
+  let [count,setCount]=useState(100)
+  debugger
+  useEffect(()=>{
+    fetch("https://jsonplaceholder.typicode.com/users")
+    .then((response)=>{
+      return response.json()
+    })
+    .then((data)=>{
+      return setData(data)
+    })
+  },[])
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>Count: {count}</h1>
+      <button type="button" onClick={() => setCount(count+100)}>Click Me</button>
+      <ChildComponent/>
+      <Venkatesh/>
+      <Ajay/>
     </div>
   );
 }

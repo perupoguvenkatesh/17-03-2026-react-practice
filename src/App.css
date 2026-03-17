@@ -1,38 +1,51 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app-container{
+  background-image: url("https://www.panthalassanews.com/assets/images/biography/comatose.jpg");
+  background-size: cover;
+  height: 200vh;
+  width: 100vw;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
+.app-title{
+  text-decoration: underline;
+  font-weight: 500  ;
+  font-style: italic;
+  font-family: 'Arial', sans-serif;
+  color: red;
 
-.App-link {
-  color: #61dafb;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.parent-container{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  height: 1000px;
+  width:1000px;
+  background-color: green;
+  align-content: end;
 }
+.child-container{
+  background-color: white;
+  width: 100px;
+  height: 100px;
+}
+#child1{
+  order: 6;
+} 
+#child2{
+  order: 5;
+} 
+#child3{
+  order: 4;
+} 
+#child4{
+  order: 3;
+} 
+#child5{
+  order: 2;
+} 
+#child6{
+  order: 1;
+  flex-basis: 300px;
+  align-self: flex-start;
+} 
