@@ -7,7 +7,7 @@ function Ajay() {
   }
   return (
     <div>
-        <h1>{add(91,44)}</h1>
+        <h1>deva Ajay Component</h1>
     </div>
   )
 }
