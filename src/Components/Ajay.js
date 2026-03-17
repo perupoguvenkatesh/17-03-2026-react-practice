@@ -2,8 +2,8 @@ import React from 'react'
 
 function Ajay() {
   function add(a,b){
-    let c=a+b;
-    console.log(c);
+    let result=a+b;
+    console.log("this is output",result);
   }
   return (
     <div>
