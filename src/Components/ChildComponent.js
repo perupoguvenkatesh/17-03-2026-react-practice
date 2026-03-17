@@ -3,7 +3,8 @@ import React from 'react'
 function ChildComponent() {
   return (
     <div>
-        <h1>Ajay</h1>
+        <h1>Venkatesh</h1>
+        <h1>Venkatesh is Godd boy</h1>
     </div>
   )
 }
