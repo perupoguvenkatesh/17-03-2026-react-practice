@@ -2,12 +2,12 @@ import React from 'react'
 
 function Ajay() {
   function add(a,b){
-    let result=a+b;
-    console.log("this is output",result);
+    let res=a+b;
+    console.log(res);
   }
   return (
     <div>
-        <h1>deva Ajay Component</h1>
+        <h1>The total result is: {add(91,44)} deva Ajay Component</h1>
     </div>
   )
 }

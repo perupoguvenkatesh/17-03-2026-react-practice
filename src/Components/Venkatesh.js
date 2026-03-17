@@ -3,7 +3,7 @@ import React from 'react'
 function Venkatesh() {
   return (
     <div>
-        <h1>Deva Venkatesh Component</h1>
+        <h1>Deva Venkatesh Component extension</h1>
     </div>
   )
 }
