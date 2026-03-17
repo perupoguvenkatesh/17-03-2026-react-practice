@@ -1,9 +1,13 @@
 import React from 'react'
 
 function Ajay() {
+  function mul(a,b){
+      return a*b
+  }
+        
   return (
     <div>
-        <h1>Ajay</h1>
+        <h1>{mul(2,3)}</h1>
     </div>
   )
 }
